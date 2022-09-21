@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 
 //middleware here
-app.use('/', express.static(path.join(__dirname, '..client/index.html')))
+app.use('/', express.static(path.join(__dirname, '../client/index.html')))
 app.use(express.static(path.join(__dirname, '../client')))
 
 //////////////////////////////////////////////////////////////////
